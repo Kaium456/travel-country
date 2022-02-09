@@ -1,0 +1,37 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+button {
+  background: rgb(114, 143, 9);
+  border: none;
+  padding: 8px 10px;
+  margin: 5px;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#countries {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.country-style {
+  background: cyan;
+  padding: 10px;
+  margin: 8px;
+  border: 2px solid cornflowerblue;
+  border-radius: 10px;
+}
+@media (max-width: 587px) {
+  #countries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  #countries {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
